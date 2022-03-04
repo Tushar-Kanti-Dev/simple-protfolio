@@ -67,7 +67,7 @@ a{
     margin-left: 7%;
 }
 .half img{
-    width: 40%;
+    width: 60%;
 }
 .half2{
     width: 40%;
@@ -92,25 +92,37 @@ a{
 .head-h2{
     margin: 50px;
 }
-.head-h2 h2{
-    margin-left: 100px;
-}
+.head-h2 h2 {
+    margin-left: 46px;
+    font-size: 2.5rem;
+    padding-top: 7px;
+  }
 .end{
     display: flex;
     width: 100%;
+    margin: 0 auto;
 }
-.card1{
-    width: 50%;
 
-}
 .card1-1{
-    width:50%;
+    width:40%;
     height: 300px;
-    margin: 0 0 0 290px;
-    border-left: 1px solid gray;
     box-shadow: 4px 1px 3px 2px gray;
     border-radius: 5px;
     transition: .2s;
+    border-image: linear-gradient(red, orange);
+    border-image-slice: 1;
+    border-left: 5px solid;
+    margin: 0 auto;
+}
+.card1-1 h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card1-1 p{
+    font-size: 1rem;
+    color: black;
+    margin-left: 10px;
 }
 .card1-1 h2{
     padding-top: 15px;
@@ -120,9 +132,6 @@ a{
     padding-top: 15px;
 }
 
-.card2{
-    width: 50%;
-}
 .card1-1 h2{
     text-align: center;
 }
@@ -131,22 +140,37 @@ a{
     
 }
 .card2-2{
-    width:50%;
+    width:40%;
     height: 300px;
-    text-align: left;
-    border-left: 1px solid gray;
+    border-left: 1px solid;
     box-shadow: 4px 1px 3px 2px gray;
     border-radius: 5px;
     transition: .2s;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+    border-left: 5px solid;
+    margin: 0 auto;
+}
+.card2-2 p{
+    margin-top: 15px;
+    font-size: .9rem;
+    padding-left: 10px;
 }
 
+.card1-1 p{
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: .9rem;
+}
 .card2-2:hover{
-    transform: scale(1.2);
-    margin-left: 10px;
+    transform: scale(1.1);
+    margin: 0 auto;
 }
 .card1-1:hover{
-    transform: scale(1.2);
-    margin-right: 10px;
+    transform: scale(1.1);
+    /* margin-right: 10px; */
+    margin: 0 auto;
+
 }
 #footer{
     width: 100%;
@@ -169,14 +193,45 @@ a{
     }
     .half-width img{
         width: 70%;
-        padding-left: 5%;
         margin-top: 10%;
+        margin: 0 auto;
         
     }
     .half-width p{
         text-align: justify;
         padding: 10px;
     }
+   .banner2{
+       flex-direction: column;
+       width: 100%;
+   }
+   .half{
+       width: 100%;
+       text-align: center;
+   }
+   .half2{
+       width: 100%;
+       text-align: center;
+   }
+   .end{
+       flex-direction: column;
+   }
+    .card1-1{
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: justify;
+
+    }
+    .card2-2{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        text-align: justify;
+        margin-top: 30px;
+    }
+
 }
 
 
